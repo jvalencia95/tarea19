@@ -1,0 +1,18 @@
+<section class="container mt-5">
+  <h1 class="text-center">Mensajes</h1>
+  <section class="row mt-1 g-5">
+    <section *ngFor="let item of listado;let i = index" class="col-4">
+      <div class="card shadow text-center">
+        <div class="card-header gradient">
+          {{item.name}}
+        </div>
+        <div class="card-body">
+          <p class="card-text">Username: {{item.username}}</p>
+          <p class="card-text">Email: {{item.email}}</p>
+          <p class="card-text">Teléfono: {{item.phone}}</p>
+          <p class="card-text">Website: {{item.website}}</p>
+        </div>
+      </div>
+    </section>
+  </section>
+</section>
